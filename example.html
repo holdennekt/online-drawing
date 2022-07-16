@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <script type="module">
+    import { io } from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
+    const socket = io("http://localhost:3001");
+    socket.emit('picture', {
+      data: {
+        _id: "62cf4a3f0b2a49ec10dc3ed9",
+        name: "my first picture",
+        canvas: "test canvas",
+        accessMode: "limited"
+      }
+    });
+  </script>
+  <script>
+    
+  </script>
+</body>
+
+</html>
